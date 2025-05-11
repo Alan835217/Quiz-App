@@ -1,0 +1,164 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    color: #333;
+  }
+  
+  #container {
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    position: relative;
+  }
+  
+  .title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  h2 {
+    margin-bottom: 15px;
+  }
+  
+  select, .btn {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+  }
+  
+  select {
+    background-color: #f0f0f0;
+  }
+  
+  .btn {
+    background: #6e8efb;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .btn:hover {
+    background: #5a72d1;
+  }
+  
+  .question {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .option-btn {
+    background: #f0f0f0;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+  }
+  
+  .option-btn:hover {
+    background: #d3d3d3;
+  }
+  
+  #progress {
+    margin-bottom: 15px;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  #timer {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #e63946;
+    margin-bottom: 15px;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  #result {
+    text-align: center;
+  }
+  
+  .answer-review {
+    text-align: left;
+    margin: 10px 0;
+  }
+  
+  .correct {
+    color: green;
+    font-weight: bold;
+  }
+  
+  .wrong {
+    color: red;
+    font-weight: bold;
+  }
+  
+  .correct-answer {
+    color: blue;
+    font-style: italic;
+  }
+  
+  .dark-mode-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  /* Dark Mode */
+  .dark-mode {
+    background: #121212;
+    color: #f0f0f0;
+  }
+  
+  .dark-mode #container {
+    background: #1e1e1e;
+  }
+  
+  .dark-mode select,
+  .dark-mode .option-btn,
+  .dark-mode .btn {
+    background: #333;
+    color: #fff;
+  }
+  
+  .dark-mode .btn:hover {
+    background: #555;
+  }
+  
